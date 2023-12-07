@@ -1,0 +1,269 @@
+body {
+    
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    font-size: 14px;
+   margin: 0;
+}
+
+
+
+/* Main Content Styles */
+.login-box {
+    width: 100%;
+    height: 100vh;
+}
+
+.sliding-login  {
+    width: 50%;
+    height: auto;
+    background: #ffffff;
+    padding: 15px;
+}
+
+    /* Right Side Card Styles */
+    .sliding-login  .title {
+        position: relative;
+        z-index: 1;
+        border-left: 5px solid #E65100;
+        margin: 0 0 35px;
+        padding: 10px 0 10px 50px;
+        color: #E65100;
+        font-size: 220%;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+/* Left Side Card Styles */
+.info-bg {
+    color: white;
+    background-color: #1061A7;
+}
+
+    .info-bg img {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+.log-slide h2 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 10px 30px 10px;
+}
+
+.log-slide form {
+    padding: 0 40px;
+}
+
+.log-slide .input-cont {
+    position: relative;
+    margin: 0 50px 20px;
+}
+
+.log-slide .checkBoxes {
+    position: relative;
+    margin: 0 50px 10px;
+}
+
+
+
+.input-cont {
+    position: relative;
+    margin: 0 50px 20px;
+}
+
+.input-cont input,
+.input-cont select {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0 0 0 30px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 36px; /* Set a specific height for both input and select */
+    color: #667085;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--White, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.input-cont input::placeholder,
+.input-cont select::placeholder {
+    padding-left: 0;
+}
+
+
+.log-slide .frgt-lbl-2 {
+    text-align: right;
+    text-decoration: none;
+    color: #1061A7;
+}
+
+.log-slide form input[type="submit"] {
+    border-radius: 8px;
+    border: 1px solid #1061A7;
+    background: #1061A7;
+    color: #ffff;
+    font-weight: 600;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.terms-label .main-terms {
+    text-align: right;
+    text-decoration: underline;
+    color: black;
+  
+   
+}
+
+.support-lbl {
+    color: black;
+   
+    text-decoration: none;
+
+    margin: 10px 0 0 0;
+}
+
+.phn-support .phn-num  {
+    position: relative;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px 0 0 0;
+}
+
+.svg-phn{
+    position: absolute;
+    left: -16%;
+}
+
+.email-support, .email-id {
+    position: relative;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: lowercase;
+    margin: 5px 0 0 0;
+}
+
+.svg-email{
+    position: absolute;
+    left: -13%;
+}
+
+
+.log_svg {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 2%;
+}
+
+.support-cont{
+    position: relative;
+    margin: 0 50px 8px;
+    text-align: center;
+
+}
+.txt_cent{
+    text-align: center;
+}
+.mar_rl15{
+    margin: 0 30px 0 10px;
+}
+
+.icon-bg{
+    padding: 12% 0 0 14%;
+}
+.card-info-heading{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    margin: 5px 0 20px 0;
+}
+.cardslider {
+    overflow: hidden;
+    width: 600px; /* Set the width of the cardslider */
+    margin: 20px auto;
+}
+  .cardslider-inner {
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out; /* Adjust the transition duration as needed */
+    font-size: 0; 
+  }
+
+
+  .cardslider-card {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 600px; /* Set the width of each cardslider card */
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1094px) {
+    .login-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .eq {
+        display: table;
+    }
+
+    .colm {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .login-box {
+        width: 100%;
+    }
+
+    .sliding-login  {
+        width: 100%;
+    }
+
+    .progress .bar {
+        width: 1%;
+    }
+
+    .progress #right {
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 600px) {
+    .info-bg   {
+     display: none;
+    }
+    .log-slide form{
+        padding: 0 !important;
+    }
+    .log-slide .input-cont {
+     
+        margin: 0 30px 20px;
+    }
+   .log-slide .checkBoxes {
+       margin: 0 30px 10px;
+    }
+     .support-cont {
+        margin: 0 30px 10px;
+    }
+  }
